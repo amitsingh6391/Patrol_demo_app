@@ -105,24 +105,10 @@
 import 'package:flutter/material.dart';
 import 'package:patrol_app/location.dart';
 import 'package:patrol_app/notification.dart';
-// import 'package:flutter_native_timezone/flutter_native_timezone.dart';
-// import 'package:patrol_app/overlay_screen.dart';
-// import 'package:patrol_app/webview_screen.dart';
-// import 'package:timezone/data/latest.dart' as tz_data;
-// import 'package:timezone/timezone.dart' as tz;
 
 void main() {
   runApp(const ExampleApp());
-
-  // setUpTimezone();
 }
-
-// Future<void> setUpTimezone() async {
-//   tz_data.initializeTimeZones();
-//   final timezone = await FlutterNativeTimezone.getLocalTimezone();
-//   final location = tz.getLocation(timezone);
-//   tz.setLocalLocation(location);
-// }
 
 class ExampleApp extends StatelessWidget {
   const ExampleApp({super.key});
@@ -178,7 +164,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
         title: Text(widget.title),
       ),
       body: ListView(
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         key: const Key('listViewKey'),
         children: [
           const Text(
